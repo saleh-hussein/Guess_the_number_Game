@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buttonshape">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!-- header image  -->
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/looks_guess_the_number" />
+
+        <!-- instructions  -->
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/options"/>
+
+        <!--Level 1 (From 1 - 10 ) Very easy
+
+           To enable touch feedback (ripple) in textView we do the following:
+           1. Add Add FrameLayout to be parent to textView
+           2. if we want background to textView, set the background we need to this FrameLayout.
+           3. set the following attribute to textView:
+                 android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+           -->
+
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttonshape">
+
+            <TextView
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:onClick="level1"
+                android:text="@string/option1"
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </FrameLayout>
+
+
+
+
+        <!--Level 2 (From 1 - 50 )  Easy -->
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/buttonshape">
+
+            <TextView
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:onClick="level2"
+                android:text="@string/option2"
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </FrameLayout>
+
+        <!--Level 3 (From 1 - 100 )  Intermediate -->
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/buttonshape">
+
+            <TextView
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:onClick="level3"
+                android:text="@string/option3"
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </FrameLayout>
+
+
+
+        <!--Level 4 (From 1 - 1000 )  Advance -->
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/buttonshape">
+
+            <TextView
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:onClick="level4"
+                android:text="@string/option4"
+
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Guess the number</string>
+    <string name="instruction">We Generated a random integer number between 1 and </string>
+    <string name="instruction_completed">, Try to guess the number we generated.</string>
+    <string name="instruction2"> Enter number between 1 and </string>
+    <string name="instruction2_completed"> , then press \"guess\" button. </string>
+
+
+
+    <string name="options"> Choose the level: </string>
+    <string name="option1"> Level 1 ( From 1 &#8211; 10 ) Very easy </string>
+    <string name="option2"> Level 2 ( From 1 &#8211; 50 ) Easy </string>
+    <string name="option3"> Level 3 ( From 1 &#8211; 100 ) Intermediate</string>
+    <string name="option4"> Level 4 ( From 1 &#8211; 1000 ) Advance</string>
+
+
+    <string name="editText">Enter number between 1 and </string>
+    <string name="guessBtn">Guess</string>
+
+    <string name="newGameBtn">New Game</string>
+
+
+    <string name="remainingYouHave">You have: </string>
+    <string name="attempts">attempts</string>
+    <string name="sorry_game_over">Sorry GAME OVER </string>
+    <string name="hint_the_number_was">The number is</string>
+    <string name="Congratulation">Congratulation, YES. the number is </string>
+    <string name="no_of_remaining_attempts">Number of remaining attempts:</string>
+
+    <string name="theNumberIsSmallerThan">The number we guessed is smaller than</string>
+    <string name="try_again">, Try again</string>
+    <string name="the_number_is_greater_than">The number we guessed is greater than</string>
+
+
+
+</resources>

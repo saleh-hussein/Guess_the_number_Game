@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">لعبة تخمين الرقم</string>
+    <string name="editText">"أدخل رقم بين 1 و "</string>
+    <string name="guessBtn">جرِّب</string>
+    <string name="instruction">"قمنا بتخمين رقم صحيح بين 1 و "</string>
+    <string name="newGameBtn">لعبة جديدة</string>
+    <string name="Congratulation">تهانينا. إجابة صحيحة  الرقم هو</string>
+    <string name="hint_the_number_was">الرقم هو</string>
+    <string name="no_of_remaining_attempts">عدد المحاولات المتبقية:</string>
+    <string name="remainingYouHave">"لديك: "</string>
+    <string name="sorry_game_over">نأسف انتهت المحاولات. حظ أوفر</string>
+    <string name="theNumberIsSmallerThan">الرقم الذي قمنا بتخمينه أصغر من</string>
+    <string name="the_number_is_greater_than">الرقم الذي قمنا بتخمينه أكبر من</string>
+    <string name="attempts">محاولات</string>
+    <string name="instruction2">أدخل رقم بين 1 و</string>
+    <string name="option1">المستوى الأول ( 1 – 10 ) سهل جدا</string>
+    <string name="option2">المستوى الثاني ( 1 – 50 ) سهل</string>
+    <string name="option3">المستوى الثالث ( 1 – 100 ) متوسط</string>
+    <string name="option4">المستوى الرابع ( 1 – 1000 ) صعب</string>
+    <string name="options">قم بإختيار المستوى:</string>
+    <string name="instruction2_completed">ثم اضغط على زر \"جرب\"</string>
+    <string name="instruction_completed">، هل تستطيع معرفة الرقم الذي قمنا بتخمينه؟!</string>
+    <string name="try_again">، حاول مرة أخرى</string>
+</resources>

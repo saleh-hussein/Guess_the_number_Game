@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buttonshape">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <!-- header image  -->
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/looks_guess_the_number" />
+
+        <!-- instructions  -->
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttonshape"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/instruction"/>
+
+
+
+        <!--container for instruction2 and  editText and guess button   -->
+        <!-- we write android:focusableInTouchMode="true"  to Stop EditText
+        from gaining focus at Activity startup -->
+        <LinearLayout
+            android:id="@+id/instruction2AndEditTextAndGuessBtnContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/buttonshape"
+            android:focusableInTouchMode="true"
+            android:layout_below="@id/instruction">
+
+            <!-- instruction 2 text -->
+            <TextView
+                android:id="@+id/instruction2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:text="@string/instruction2"/>
+
+            <!-- face for smile or sad result -->
+            <ImageView
+                android:id="@+id/face"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal" />
+
+            <!-- hint:inform the user, the guessed number is greater or smaller  -->
+            <TextView
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text=""/>
+
+
+            <!-- Number of remaining Attempt  -->
+            <TextView
+                android:id="@+id/Number_of_remaining_attempts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center_horizontal"
+                android:drawableStart="@drawable/ic_wb_sunny_black_24dp"
+                android:text=""/>
+
+            <!--container for editText and guess button   -->
+            <LinearLayout
+                android:id="@+id/editTextAndGuessBtnContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="42sp"
+                    android:maxLength="4"
+                    android:gravity = "center_horizontal"
+                    android:inputType="number"/>
+
+
+                <!--Enable ripple in Guess Button
+
+                To enable touch feedback (ripple) in Button we do the following:
+                1. Add Add FrameLayout to be parent to Button
+                2. if we want background to Button, set the background we need to this FrameLayout.
+                3. set the following attribute to Button:
+                      android:background="?attr/selectableItemBackgroundBorderless"
+                     android:clickable="true"
+                     android:focusable="true"
+                -->
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonshape">
+
+                    <Button
+
+                        android:id="@+id/guess_btn"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"
+                        android:drawSelectorOnTop="true"
+                        android:text="@string/guessBtn"
+
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        />
+
+
+                </FrameLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <!-- new game button (Invisible), if the game is over, the button will be visible-->
+        <Button
+            android:id="@+id/newGame_btn"
+            android:text="@string/newGameBtn"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_below="@id/instruction2AndEditTextAndGuessBtnContainer"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
